@@ -1,14 +1,16 @@
-function App() {
-  function handleNameChange() {
-    const names = ["Earn", "Grow", "Give"];
-    const int = Math.floor(Math.random() * 3);
-    return names[int];
-  }
+import Header from "./Header";
+import Content from "./Content";
+import Footer from "./Footer";
 
+
+
+function App() {
+  
   return (
     <div className="App">
-      Subscribe to Janu
-      <p>Let's {handleNameChange()} Money</p>
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
